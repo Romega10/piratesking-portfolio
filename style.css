@@ -1,0 +1,148 @@
+* {margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:Arial, sans-serif;
+    background:black;
+    color:white;
+    overflow-x:hidden;
+}
+
+canvas{
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:-1;
+}
+
+#loader{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:1000;
+    font-size:22px;
+    letter-spacing:3px;
+}
+
+#progressBar{
+    position:fixed;
+    top:0;
+    left:0;
+    height:4px;
+    background:linear-gradient(to right,cyan,purple);
+    width:0%;
+    z-index:999;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    padding:20px 40px;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+}
+
+header a{
+    color:cyan;
+    margin-left:20px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+header a:hover{
+    color:purple;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:48px;
+    text-shadow:0 0 20px cyan;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 25px;
+    background:transparent;
+    border:2px solid cyan;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:cyan;
+    color:black;
+    box-shadow:0 0 25px cyan;
+}
+
+.card{
+    margin:80px auto;
+    padding:40px;
+    width:80%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border-radius:15px;
+    transition:transform 0.3s;
+}
+
+.tilt:hover{
+    transform:rotateY(10deg) rotateX(5deg);
+}
+
+.bar{
+    background:#222;
+    height:10px;
+    margin:5px 0 15px 0;
+}
+
+.bar div{
+    height:10px;
+    background:linear-gradient(to right,cyan,purple);
+}
+
+.stats{
+    display:flex;
+    justify-content:space-around;
+    margin-top:40px;
+}
+
+.counter{
+    font-size:40px;
+    color:cyan;
+}
+
+.cursor{
+    width:15px;
+    height:15px;
+    border:2px solid cyan;
+    border-radius:50%;
+    position:fixed;
+    pointer-events:none;
+    transition:0.1s;
+}
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+}
