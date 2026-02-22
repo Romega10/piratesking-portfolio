@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adarsh Raj | Pirate King Energy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">INITIALIZING BATTLEFIELD...</div>
+<div id="progressBar"></div>
+<canvas id="particles"></canvas>
+<div class="cursor"></div>
+
+<header>
+    <h1 class="logo">ONE PIECE ⚡</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#stats">Stats</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>ENTER THE BATTLEFIELD</h2>
+    <p id="typing"></p>
+    <button onclick="scrollToSection('about')">Engage ⚡</button>
+</section>
+
+<section id="about" class="card reveal">
+    <h2>About Me</h2>
+    <p>Adarsh Raj — Gamer ⚡ Developer ⚡ Strategist.  
+    Pirate mindset. Cyberpunk execution.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card tilt reveal">
+        <p>HTML</p>
+        <div class="bar"><div style="width:90%"></div></div>
+        <p>CSS</p>
+        <div class="bar"><div style="width:85%"></div></div>
+        <p>JavaScript</p>
+        <div class="bar"><div style="width:80%"></div></div>
+    </div>
+</section>
+
+<section id="stats" class="reveal">
+    <h2>Battle Stats</h2>
+    <div class="stats">
+        <div><h3 class="counter" data-target="50">0</h3><span>Projects</span></div>
+        <div><h3 class="counter" data-target="200">0</h3><span>Wins</span></div>
+        <div><h3 class="counter" data-target="3">0</h3><span>Years</span></div>
+    </div>
+</section>
+
+<section id="contact" class="card reveal">
+    <h2>Contact</h2>
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Message" required></textarea>
+        <button type="submit">Transmit ⚡</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Adarsh Raj | Pirate King Energy</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
